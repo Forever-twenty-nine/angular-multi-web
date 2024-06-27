@@ -1,0 +1,230 @@
+<app-hero
+    heroClass="HeroAboutUs"
+    [heroTag]="tag"
+    [heroTitle]="title"
+    [heroText]= "text"
+    [btnContact]=true
+    [btnDossier]=true
+
+>
+</app-hero>
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+            [titleSection]="titleOrigin"
+        ></app-title-section>
+
+        <div class="relative flex flex-wrap justify-between gap-8">
+
+            <app-box
+            [ngClass]="'OriginOne'"
+            [boxStrongBig]="boxOriginOneStrongBig"
+            [boxText]="boxOriginOneText"
+            ></app-box>
+
+            <app-box
+            [ngClass]="'OriginTwo'"
+            [boxStrongBig]="boxOriginTwoStrongBig"
+            [boxText]="boxOriginTwoText"
+            ></app-box>
+
+            <app-box
+            [ngClass]="'OriginThree'"
+            [boxStrongBig]="boxOriginThreeStrongBig"
+            [boxText]="boxOriginThreeText"
+            ></app-box>
+
+            <app-box
+            [ngClass]="'OriginFour'"
+            [boxStrongBigHighlight]="boxOriginFourStrongBigHighlight"
+            [boxText]="boxOriginFourText"
+            ></app-box>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+            [titleSection]="titlePhilosophy"
+        ></app-title-section>
+
+        <div class="Box">
+            <div class="lg:flex gap-2">
+                <p class="text-xl pb-5 lg:border-r border-solid border-BrandGray-300">
+                    <app-icon-triangle-rotate></app-icon-triangle-rotate>
+                    <strong class=" text-2xl text-BrandGreen-500">
+                        {{ 'about-us.philosophyTextHighlightOne' | translate }}
+                    </strong>
+                    {{ 'about-us.philosophyTextOne' | translate }}
+                </p>
+                <p class="text-xl pb-5 lg:pl-6">
+                    <app-icon-triangle-rotate></app-icon-triangle-rotate>
+                    <strong class="text-2xl text-BrandGreen-500">
+                        {{ 'about-us.philosophyTextHighlightTwo' | translate }}
+                    </strong>
+                    {{ 'about-us.philosophyTextTwo' | translate }}
+                </p>
+            </div>
+            <p class="text-xl lg:pt-5 lg:mt-5 lg:border-t border-solid border-BrandGray-300">
+                <app-icon-triangle-rotate></app-icon-triangle-rotate>
+                <strong class="text-2xl text-BrandGreen-500">
+                    {{ 'about-us.philosophyTextHighlightThree' | translate }}
+                </strong>
+                {{ 'about-us.philosophyTextThree' | translate }}
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+        [titleSection]="titleValues"
+        ></app-title-section>
+
+        <div class="flex flex-wrap justify-between gap-8">
+            <app-box
+                [ngClass]="'ValuesOne'"
+                boxImg="../../../assets/images/icon-integrity.png"
+                [boxImgAlt]="boxValueOneImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxValueOneTitle"
+                [boxText]="boxValueOneText"
+                [boxText2]="boxValueOneText2"
+            ></app-box>
+
+            <app-box
+                [ngClass]="'ValuesTwo'"
+                boxImg="../../../assets/images/icon-positive.png"
+                [boxImgAlt]="boxValueTwoImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxValueTwoTitle"
+                [boxText]="boxValueTwoText"
+                [boxText2]="boxValueTwoText2"
+            ></app-box>
+
+            <app-box
+                [ngClass]="'ValuesThree'"
+                boxImg="../../../assets/images/icon-talent.png"
+                [boxImgAlt]="boxValueThreeImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxValueThreeTitle"
+                [boxText]="boxValueThreeText"
+            ></app-box>
+
+            <app-box
+                [ngClass]="'ValuesFour'"
+                boxImg="../../../assets/images/icon-people.png"
+                [boxImgAlt]="boxValueFourImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxValueFourTitle"
+                [boxText]="boxValueFourText"
+            ></app-box>
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+            [titleSection]="titleTrajectory"
+        ></app-title-section>
+
+        <div class="BoxTextImg flex flex-wrap items-stretch justify-between gap-8">
+            <app-box
+                [ngClass]="'TrajectoryOne'"
+                [boxText]="boxTrajectoryOneText"
+                [boxText2]="boxTrajectoryOneText2"
+            ></app-box>
+            <app-box
+                [ngClass]="'TrajectoryTwo'"
+                boxClass="p-0"
+            ></app-box>
+            <app-box
+                [ngClass]="'TrajectoryThree'"
+                boxClass="p-0"
+            ></app-box>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+            [titleSection]="titleMethodology"
+        ></app-title-section>
+
+        <div class="flex flex-wrap justify-between gap-8">
+            <app-box
+                [ngClass]="'MethodologyOne'"
+                boxImg="../../../assets/images/icon-agility.jpg"
+                [boxImgAlt]="boxMethodologyOneImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxMethodologyOneTitle"
+                [boxText]="boxMethodologyOneText"
+                [boxText2]="boxMethodologyOneText2"
+            ></app-box>
+
+            <app-box
+                [ngClass]="'MethodologyTwo'"
+                boxImg="../../../assets/images/icon-engagement.jpg"
+                [boxImgAlt]="boxMethodologyTwoImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxMethodologyTwoTitle"
+                [boxText]="boxMethodologyTwoText"
+                [boxText2]="boxMethodologyTwoText2"
+            ></app-box>
+
+            <app-box
+                [ngClass]="'MethodologyThree'"
+                boxImg="../../../assets/images/icon-transparency.jpg"
+                [boxImgAlt]="boxMethodologyThreeImgAlt"
+                boxImgClass="h-26 mb-4"
+                [boxTitle]="boxMethodologyThreeTitle"
+                [boxText]="boxMethodologyThreeText"
+            ></app-box>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<section>
+    <div class="Container">
+
+        <app-title-section
+            [titleSection]="titleFuture"
+        ></app-title-section>
+
+        <app-box
+            [boxStrongBigHighlight]="boxFutureOneStrongBigHighlight"
+            [boxText]="boxFutureOneText"
+            boxStrongBigHighlight=""
+            boxText=", aprovechando el poder de la inteligencia artificial para optimizar nuestros procesos internos y mejorar la eficiencia. Al mismo tiempo, nos dedicamos a crear soluciones innovadoras para nuestros clientes, permitiéndoles aprovechar esta tecnología transformadora y prosperar en un panorama digital en constante evolución."
+        ></app-box>
+
+    </div>
+</section>
+
+
+<app-banner-contact></app-banner-contact>

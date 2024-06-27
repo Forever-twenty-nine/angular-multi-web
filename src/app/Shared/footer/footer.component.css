@@ -1,0 +1,27 @@
+footer{
+    @apply py-8 pb-2;
+    @apply bg-BrandGray-950 text-BrandGray-500;
+}
+
+h3{
+    @apply text-BrandGray-300 text-base uppercase mb-4;
+}
+
+p{
+    @apply text-BrandGray-500 text-sm mb-2;
+}
+
+ul{
+    @apply lg:max-w-xs;
+
+    @apply lg:text-left;
+}
+
+a{
+    @apply inline-block;
+    @apply px-3 py-3; 
+    @apply text-sm text-BrandGray-500 ;
+    @apply hover:text-BrandGreen-500 hover:no-underline;
+
+    @apply lg:py-2 lg:px-0;
+}

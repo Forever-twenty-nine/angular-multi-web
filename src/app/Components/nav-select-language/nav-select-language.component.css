@@ -1,0 +1,10 @@
+a{
+    @apply flex items-center gap-1 block;
+    @apply cursor-pointer;
+
+    @apply hover:text-BrandGreen-500 hover:no-underline;
+}
+
+a svg{
+    @apply hover:fill-BrandGreen-500
+}

@@ -1,0 +1,43 @@
+<nav>
+  <ul class="text-left mb-0 lg:flex lg:items-center lg:justify-center lg:gap-2">
+    @for (item of availableRoutes; track item)
+    {
+    @if(item.Children)
+    {
+    <li class="NavLinkChildren" [ngClass]="{'NavLink': isTopDropdownOpen, }" (mouseenter)="toggleDropdown(item , true)"
+      (mouseleave)="toggleDropdown(item, false)" id="{{ item.labels[languageService.getCurrentLanguage()] }}">
+      <a title="{{ item.labels[languageService.getCurrentLanguage()] }}">
+        <span title=""> {{ item.labels[languageService.getCurrentLanguage()] }}</span>
+      </a>
+      <ul [ngClass]="calculateDropdownClasses(item)">
+        @for(subItem of item.Children; track subItem )
+        {
+        <li class="NavDropdownLink">
+          <a
+            [routerLink]="[subItem.routePrefix[languageService.getCurrentLanguage()] + subItem.path[languageService.getCurrentLanguage()]]">
+            {{ subItem.labels[languageService.getCurrentLanguage()] }}
+          </a>
+        </li>
+        }
+      </ul>
+    </li>
+    }
+    @else{
+    <li class="NavLink">
+      <a [class.active]="isRouteActive(item)"
+        [routerLink]="[item.routePrefix[languageService.getCurrentLanguage()] + item.path[languageService.getCurrentLanguage()]]">
+        {{ item.labels[languageService.getCurrentLanguage()] }}
+      </a>
+    </li>
+    }
+    }
+    <li class="hidden lg:!block lg:mx-2">
+      <span class="block h-5 w-px bg-BrandGray-500"></span>
+    </li>
+    <li class="lg:mr-0 lg:mt-0 min-w-10">
+      <!-- select languaje -->
+      <app-nav-select-language></app-nav-select-language>
+      <!-- select languaje -->
+    </li>
+  </ul>
+</nav>

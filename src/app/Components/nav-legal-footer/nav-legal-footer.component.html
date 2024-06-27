@@ -1,0 +1,12 @@
+<ul>
+  @for(route of routes; track route )
+  {
+  <li><a [routerLink]="[route.routePrefix[language.getCurrentLanguage()]+ route.path [language.getCurrentLanguage()]]"
+      [title]="[route.title[language.getCurrentLanguage()]]">
+      <span>
+        {{ route.labels[language.getCurrentLanguage()]}}
+      </span>
+    </a>
+  </li>
+  }
+</ul>

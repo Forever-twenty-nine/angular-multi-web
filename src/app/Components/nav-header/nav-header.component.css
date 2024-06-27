@@ -1,0 +1,111 @@
+nav {
+    @apply h-auto w-full;
+    @apply p-4 pt-20 pr-0;
+
+    @apply lg:pt-2 lg:pb-0;
+
+   
+
+    
+}
+
+
+
+
+
+
+
+/* > Links menu */
+.NavLink > a,
+.NavLinkChildren > a,
+.NavDropdownLink > a{ 
+    @apply block; 
+
+    @apply text-BrandGray-950 font-AvenirMedium text-[14px] lg:text-[12px];
+    
+    @apply hover:text-BrandGreen-600 hover:no-underline;  
+    
+}
+.NavLink > a:hover svg path{ 
+    @apply fill-BrandGreen-600 
+}
+.NavLink > a,
+.NavLinkChildren > a{
+    @apply px-1 py-3; 
+    @apply uppercase; 
+}
+
+.NavDropdownLink > a{
+    @apply px-2 py-2;
+    @apply text-[15px] lg:text-[14px]; 
+
+    @apply hover:bg-BrandGray-50;
+}
+
+/* > Link menu dropdown */
+.NavLinkChildren > a:after{
+    content: "";
+    
+    margin-left: .5em;
+    margin-bottom: .2em;
+
+    width: 6px;
+    height: 6px;
+
+    display: inline-block;
+    box-sizing: border-box;
+    
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+
+    transform: rotate(45deg);
+}
+
+/* > Dropdown  */
+.NavLinkChildren{
+    @apply relative;
+}
+.NavDropdown{
+    @apply mb-3 ml-2 pl-4 py-2;
+
+    @apply border-l border-solid border-BrandGray-300; 
+
+    /* Desktop */
+    @apply lg:hidden;
+    @apply lg:py-4 lg:px-3;  
+    @apply lg:mb-0;
+    @apply lg:bg-white;
+    @apply lg:border-transparent;
+    @apply lg:shadow-lg;
+    @media (min-width: 1024px) { 
+        min-width: 180px;
+    }
+}
+
+.NavDropdown li{
+    @apply w-full;
+}
+.NavDropdown > a{
+    @apply py-2 px-3;
+    
+    @apply text-[13px];
+    @apply transition-all;
+    
+    /* Desktop */    
+    @apply lg:text-left;
+
+    /* Hover */
+    @apply hover:lg:text-BrandGreen-600 hover:lg:bg-BrandGray-50; 
+    @apply hover:lg:text-left;
+}
+.NavDropdown.vir-nav-show{
+    /* Desktop */
+    @apply lg:block 
+}
+.NavLinkChildren .NavDropdown.vir-nav-show{
+    @apply block;
+    @apply transition-all; 
+    /* Desktop */
+    @apply lg:absolute lg:-right-14 lg:top-full lg:mr-5;
+    @apply lg:translate-x-2;  
+}

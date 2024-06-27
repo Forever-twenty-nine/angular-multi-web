@@ -1,0 +1,18 @@
+.IconRotate{
+    @apply inline-block;
+}
+
+.IconRotate svg{
+    @apply mx-auto;
+    @apply h-full;
+    @apply origin-center -rotate-90;
+    animation: 10s rotate ease-in-out infinite;
+}
+@keyframes rotate {
+    0% { transform: rotate(-90deg) }
+    30% { transform: rotate(270deg) }
+    40% { transform: rotate(360deg) }
+    60% { transform: rotate(450deg) }
+    80% { transform: rotate(540deg) }
+    100% { transform: rotate(630deg) }
+}

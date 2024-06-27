@@ -1,0 +1,38 @@
+<div class="Box {{ boxClass }} ">
+
+    @if(boxImg){
+        <img src="{{ boxImg }}" 
+             alt="{{ boxImgAlt }}" 
+             class="{{ boxImgClass }}"
+        /> 
+    }
+  
+    @if(boxTitle){
+        <h3 class="font-AvenirHeavy text-BrandGray-950 text-3xl mb-2">
+            {{ boxTitle }}
+        </h3>
+    }
+
+    <p>
+        @if(boxStrongBig){
+            <strong class="text-xl">
+                {{ boxStrongBig }}
+            </strong>
+        }
+        @if(boxStrongBigHighlight){
+            <strong class="text-xl text-BrandGreen-500">
+                {{ boxStrongBigHighlight }}
+            </strong>
+        }
+        {{ boxText }}
+    </p>
+
+    @if(boxText2){
+        <p>{{ boxText2 }}</p>
+    }
+
+    @if(boxText3){
+        <p>{{ boxText3 }}</p>
+    }
+    
+</div>

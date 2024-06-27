@@ -1,0 +1,15 @@
+ul{
+    @apply min-w-48;
+
+    @apply lg:text-left;
+}
+a{
+    @apply inline-block; 
+    @apply px-3 py-2;  
+    @apply text-sm text-BrandGray-500 ;
+    @apply fill-BrandGray-500;
+    @apply hover:fill-BrandGreen-500 hover:text-BrandGreen-500 hover:no-underline;    
+}
+a.FooterIcon{
+    @apply h-8 w-8 mt-2 p-2 lg:ml-2;
+}

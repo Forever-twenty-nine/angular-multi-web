@@ -1,0 +1,23 @@
+.HeroLegal{
+  background-image: url('../../../assets/images/hero-legal.jpg');
+}
+
+h4{
+  @apply text-2xl;
+}
+ul{
+  @apply pl-5;
+  @apply list-disc;
+}
+ul li,
+ol li{
+  @apply text-BrandGray-600 text-base;
+}
+a{
+  @apply pl-1;
+  @apply text-BrandGreen-600;
+  @apply hover:underline;
+}
+p{
+  @apply mb-5
+}

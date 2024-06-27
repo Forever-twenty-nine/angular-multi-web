@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+
+
+
+/* General styles for Virtusway site */
+/* --------------------------------- */
+
+html{  
+    scroll-behavior: smooth;
+} 
+
+body,
+h1, h2, h3, h4, h5, h6, p{
+    @apply text-BrandGray-600 font-AvenirMedium text-base; 
+}
+
+h1, h2{
+    @apply text-BrandGray-950;
+}
+
+strong{
+    @apply font-AvenirHeavy;
+}
+
+section{
+    @apply pt-12 pb-12; 
+}
+
+
+/* Some custom classes */
+.Container{
+    @apply w-full;
+    @apply mx-auto;
+    @apply px-6;  
+
+    @apply lg:px-4 xl:max-w-[1140px];  
+} 
+
+.Box{
+    @apply relative;
+    @apply h-full;
+    @apply p-8;
+    @apply bg-white; 
+    @apply shadow-Box;
+}
+
+.BoxTextImg .Box{
+    @apply h-auto;
+}
+
+
+@tailwind utilities;
+
+@layer base{
+    @font-face{
+        font-family: 'AvenirLight';
+        font-style: light;
+        font-display: swap; 
+        src: url('assets/fonts/Avenir-Light.woff2') format('woff2')
+             url('assets/fonts/Avenir-Light.woff') format('woff'),
+    }
+    @font-face{
+        font-family: 'AvenirRoman';
+        font-style: normal;
+        font-display: swap;  
+        src: url('assets/fonts/Avenir-Roman.woff2') format('woff2'),
+             url('assets/fonts/Avenir-Roman.woff') format('woff');
+    }
+    @font-face{
+        font-family: 'AvenirMedium';
+        font-style: normal;
+        font-display: swap;  
+        src: url('assets/fonts/Avenir-Medium.woff2') format('woff2'),
+             url('assets/fonts/Avenir-Medium.woff') format('woff');
+    }
+    @font-face{
+        font-family: 'AvenirHeavy';
+        font-style: normal;
+        font-display: swap;  
+        src: url('assets/fonts/Avenir-Heavy.woff2') format('woff2'),
+             url('assets/fonts/Avenir-Heavy.woff') format('woff');
+    }
+    
+} 

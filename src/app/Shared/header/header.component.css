@@ -1,0 +1,53 @@
+header{
+    @apply z-[110];
+    @apply fixed top-0 w-full;
+        
+    @apply bg-white;
+    @apply border-b-0;
+}
+
+header.NavScrolling{
+    @apply bg-white;  
+    @apply border-b border-solid border-BrandGray-100;
+}
+header.NavScrolling .Square{
+    @apply lg:opacity-0 lg:h-0;
+}
+header.NavScrolling .Horizontal{
+    @apply lg:opacity-100 lg:h-auto;
+}
+
+.Nav{
+    @apply fixed top-0 right-0;
+    @apply translate-x-full;
+
+    @apply z-30;
+
+    /* @apply bg-white; */ 
+    @apply shadow-lg;
+    @apply transition-all;
+    @apply opacity-0;
+    @apply transition-opacity;
+
+    /* Desktop */
+    @apply lg:w-auto;  
+    @apply lg:pt-0 lg:pb-0;
+    @apply lg:relative;    
+    @apply lg:translate-x-0;
+    @apply lg:bg-transparent;
+    @apply lg:shadow-none;
+    @apply lg:opacity-100;
+    @media (min-width: 1024px) {
+        height: auto !important;
+    } 
+}
+
+.Nav.Open {
+    @apply translate-x-0;
+    @apply w-full h-screen overflow-hidden;
+    @apply bg-white; 
+    @apply opacity-100; 
+}
+.Nav.Open ul{
+    @apply h-full overflow-auto;
+} 

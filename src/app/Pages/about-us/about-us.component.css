@@ -1,0 +1,91 @@
+/* Custom classes */
+.OriginOne{
+    flex: 1 1 37%;
+    @media screen and (max-width: 991px){
+        flex: 1 1 100%;
+    }
+} 
+
+.OriginTwo{
+    flex: 1 1 32%;
+    @media screen and (max-width: 991px){
+        flex: 1 1 100%;
+    }
+}
+
+.OriginThree{
+    flex: 1 1 25%;
+    @media screen and (max-width: 991px){
+        flex: 1 1 100%;
+    }
+}
+
+.OriginFour{
+    @apply mx-auto max-w-4xl;
+    flex: 1 1 100%;
+}
+
+
+.ValuesOne {
+    flex: 1 1 45%;
+}
+
+.ValuesTwo {
+    flex: 1 1 50%
+}
+
+.ValuesThree {
+    flex: 1 1 50%;
+}
+
+.ValuesFour {
+    flex: 1 1 45%;
+}
+
+
+
+.TrajectoryOne{
+    flex: 1 1 48%;
+    @media screen and (max-width: 991px) {
+        flex: 1 1 100%;
+    }
+}
+
+.TrajectoryTwo{
+    @apply bg-no-repeat bg-cover bg-center; 
+    flex: 1 1 48%;
+    background-image: url('../../../assets/images/team-arg-1.jpg'); 
+
+    @media screen and (max-width: 991px) {
+        flex: 1 1 100%;
+        min-height: 340px;
+    }
+}
+
+
+.TrajectoryThree{ 
+    @apply bg-no-repeat bg-cover bg-center; 
+    flex: 1 1 100%;
+    min-height: 340px;
+    background-image: url('../../../assets/images/team-es-1.jpg');
+}
+
+
+
+.MethodologyOne{
+    flex: 1 1 46%;
+    @media screen and (max-width: 767px) {
+        flex: 1 1 100%;
+    }
+}
+
+.MethodologyTwo{
+    flex: 1 1 46%;
+    @media screen and (max-width: 767px) {
+        flex: 1 1 100%;
+    }
+}
+
+.MethodologyThree{
+    flex: 1 1 100%;
+}
