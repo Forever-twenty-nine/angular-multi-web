@@ -1,13 +1,14 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-// translate
-import { TranslateService } from '@ngx-translate/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
-
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-banner-contact',
+  standalone: true,
+  imports: [CommonModule, TranslateModule, ButtonComponent],
   templateUrl: './banner-contact.component.html',
-  styleUrl: './banner-contact.component.css'
 })
 export class BannerContactComponent  implements OnDestroy,OnInit {
 

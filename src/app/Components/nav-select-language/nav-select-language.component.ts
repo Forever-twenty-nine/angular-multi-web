@@ -1,14 +1,18 @@
-import { Component, OnDestroy } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
-import { Router } from '@angular/router';
 import { availableRoutes } from '../../Data/routes.data';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnDestroy } from '@angular/core';
+import { IconLangComponent } from './icon-lang/icon-lang.component';
+import { LanguageService } from '../../services/language.service';
 import { legalRoutes } from '../../Data/legal.data';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  imports: [CommonModule, IconLangComponent, TranslateModule],
   selector: 'app-nav-select-language',
-  templateUrl: './nav-select-language.component.html',
-  styleUrl: './nav-select-language.component.css'
+  standalone: true,
+  templateUrl: './nav-select-language.component.html'
 })
 export class NavSelectLanguageComponent implements OnDestroy {
 

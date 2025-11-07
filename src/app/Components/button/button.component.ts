@@ -1,11 +1,14 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-button',
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
 })
 export class ButtonComponent {
 

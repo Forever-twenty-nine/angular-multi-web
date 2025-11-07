@@ -1,8 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-icon-lang',
+  standalone: true,
+  imports: [CommonModule],
   template: `<span class="inline-block w-3 h-full mr-1">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path
@@ -11,7 +13,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       />
     </svg>
   </span>`,
-  styleUrl: './icon-lang.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IconLangComponent {}

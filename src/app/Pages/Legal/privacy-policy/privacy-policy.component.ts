@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { LanguageService } from '../../../services/language.service';
+import { PrivacyPolicyEnComponent } from './privacy-policy-en/privacy-policy-en.component';
+import { PrivacyPolicyEsComponent } from './privacy-policy-es/privacy-policy-es.component';
 import { Subscription } from 'rxjs';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  imports: [CommonModule, PrivacyPolicyEnComponent, PrivacyPolicyEsComponent, TranslateModule],
   selector: 'app-privacy-policy',
+  standalone: true,
   templateUrl: './privacy-policy.component.html'
 })
 export class PrivacyPolicyComponent {

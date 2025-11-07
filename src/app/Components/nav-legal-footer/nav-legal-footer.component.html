@@ -1,11 +1,11 @@
-<ul>
+<ul class="flex flex-wrap items-center justify-center gap-4 mt-8">
   @for(route of routes; track route )
   {
-  <li><a [routerLink]="[route.routePrefix[language.getCurrentLanguage()]+ route.path [language.getCurrentLanguage()]]"
-      [title]="[route.title[language.getCurrentLanguage()]]">
-      <span>
-        {{ route.labels[language.getCurrentLanguage()]}}
-      </span>
+  <li>
+    <a [routerLink]="[route.routePrefix[language.getCurrentLanguage()]+ route.path [language.getCurrentLanguage()]]"
+      [title]="[route.title[language.getCurrentLanguage()]]"
+      class="text-sm text-gray-400 hover:text-green-500 transition-colors">
+      {{ route.labels[language.getCurrentLanguage()]}}
     </a>
   </li>
   }

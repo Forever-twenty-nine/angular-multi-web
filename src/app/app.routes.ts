@@ -1,6 +1,4 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-// pages
+import { Routes } from '@angular/router';
 import { HomeComponent } from './Pages/home/home.component';
 import { AboutUsComponent } from './Pages/about-us/about-us.component';
 import { ContactComponent } from './Pages/contact/contact.component';
@@ -14,44 +12,47 @@ import { MicrosoftComponent } from './Pages/web-Services/microsoft/microsoft.com
 import { LogisticSoftwareComponent } from './Pages/web-Services/logistic-software/logistic-software.component';
 import { BusinessIntelligenceComponent } from './Pages/web-Services/business-intelligence/business-intelligence.component';
 
-const routes: Routes = [
-  // exeptions
+export const routes: Routes = [
+  // Redirección inicial
   { path: '', redirectTo: 'es/inicio', pathMatch: 'full' },
-  // home
+  
+  // Home
   { path: 'es/inicio', component: HomeComponent },
   { path: 'en/home', component: HomeComponent },
-  // about us
+  
+  // About us
   { path: 'es/acerca-de', component: AboutUsComponent },
   { path: 'en/about-us', component: AboutUsComponent },
-  // contact
+  
+  // Contact
   { path: 'es/contacto', component: ContactComponent },
   { path: 'en/contact', component: ContactComponent },
-  // web-services
+  
+  // Web Services
   { path: 'es/microsoft', component: MicrosoftComponent },
   { path: 'en/microsoft', component: MicrosoftComponent },
-  { path: 'es/software-logistica', component: LogisticSoftwareComponent},
+  { path: 'es/software-logistica', component: LogisticSoftwareComponent },
   { path: 'en/logistic-software', component: LogisticSoftwareComponent },
   { path: 'es/business-intelligence', component: BusinessIntelligenceComponent },
   { path: 'en/business-intelligence', component: BusinessIntelligenceComponent },
-  // legal
+  
+  // Legal
   { path: 'es/politica-cookie', component: CookiePolicyComponent },
   { path: 'en/cookie-policy', component: CookiePolicyComponent },
   { path: 'es/aviso-legal', component: LegalWarningComponent },
   { path: 'en/legal-warning', component: LegalWarningComponent },
   { path: 'en/privacy-policy', component: PrivacyPolicyComponent },
   { path: 'es/politica-privacidad', component: PrivacyPolicyComponent },
-  // clients
+  
+  // Clients
   { path: 'es/clientes', component: ClientsComponent },
   { path: 'en/clients', component: ClientsComponent },
-  // technologies
+  
+  // Technologies
   { path: 'es/tecnologias', component: TechnologiesComponent },
   { path: 'en/technologies', component: TechnologiesComponent },
-  // news
+  
+  // News
   { path: 'es/novedades', component: NewsComponent },
   { path: 'en/news', component: NewsComponent },
 ];
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

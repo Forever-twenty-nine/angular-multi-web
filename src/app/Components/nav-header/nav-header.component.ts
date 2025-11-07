@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { LanguageService } from '../../services/language.service';
-import { RouteInfo } from '../../Models/route-info.model';
 import { availableRoutes } from '../../Data/routes.data';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
+import { NavSelectLanguageComponent } from '../nav-select-language/nav-select-language.component';
+import { RouteInfo } from '../../Models/route-info.model';
+import { Router, RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  imports: [CommonModule, NavSelectLanguageComponent, RouterLink, TranslateModule],
   selector: 'app-nav-header',
-  templateUrl: './nav-header.component.html',
-  styleUrl: './nav-header.component.css',
+  standalone: true,
+  templateUrl: './nav-header.component.html'
 })
 export class NavHeaderComponent {
 

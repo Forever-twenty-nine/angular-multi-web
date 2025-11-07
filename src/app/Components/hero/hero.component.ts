@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-hero',
+  standalone: true,
+  imports: [CommonModule, TranslateModule, ButtonComponent],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
 })
 export class HeroComponent {
 

@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   selector: 'app-nav-footer',
   templateUrl: './nav-footer.component.html',
-  styleUrl: './nav-footer.component.css'
 })
 export class NavFooterComponent {
 

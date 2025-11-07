@@ -1,13 +1,18 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-// translate
-import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { BannerContactComponent } from '../../Components/banner-contact/banner-contact.component';
+import { BoxComponent } from '../../Components/box/box.component';
+import { HeroComponent } from '../../Components/hero/hero.component';
+import { IconTriangleRotateComponent } from '../../Components/icon-triangle-rotate/icon-triangle-rotate.component';
 import { Subscription } from 'rxjs';
-
+import { TitleSectionComponent } from '../../Components/title-section/title-section.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
+  imports: [BannerContactComponent, BoxComponent, CommonModule, HeroComponent, IconTriangleRotateComponent, TitleSectionComponent, TranslateModule],
   selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.css'
+  standalone: true,
+  templateUrl: './about-us.component.html'
 })
 export class AboutUsComponent  implements OnDestroy,OnInit {
   //

@@ -1,12 +1,18 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-// translate
-import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { HeroComponent } from '../../Components/hero/hero.component';
+import { BoxPostComponent } from '../../Components/box-post/box-post.component';
+
+// translate
+// components
 
 @Component({
   selector: 'app-news',
+  standalone: true,
+  imports: [CommonModule, TranslateModule, HeroComponent, BoxPostComponent],
   templateUrl: './news.component.html',
-  styleUrl: './news.component.css'
 })
 export class NewsComponent  implements OnDestroy,OnInit {
   tag: string = "";

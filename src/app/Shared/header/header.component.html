@@ -1,27 +1,20 @@
-<header>
-    <div class="Container flex justify-between items-center py-px">
-        <figure class="w-44 z-40 pt-3 pb-2.5 lg:pt-3 transition-all mb-0 hover:opacity-80">
+<header class="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+        <figure class="w-44 hover:opacity-80 transition-opacity">
             <a href="/" title="Logo Virtusway">
-                <span title="">
-                    <img src="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_Logo_Horizontal_Color.svg"
-                        class="w-full h-auto" alt="Logo Virtuway" />
-                </span>
+                <img src="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_Logo_Horizontal_Color.svg"
+                    class="w-full h-auto" alt="Logo Virtuway" />
             </a>
         </figure>
         <button
-            class="z-50 p-2 mr-2 lg:hidden w-12 h-12 hover:bg-BrandGray-50 focus:outline-none focus:bg-BrandGray-50"
+            class="lg:hidden p-2 w-12 h-12 hover:bg-gray-100 focus:outline-none rounded"
             title="Toggle Nav">
-            <span title="">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                    <path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                        d="M4 7h22M4 15h22M4 23h22" />
-                </svg>
-            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6">
+                <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    d="M4 7h22M4 15h22M4 23h22" />
+            </svg>
         </button>
 
-        <app-nav-header
-            [ngClass]="'Nav'"
-        ></app-nav-header>
-
+        <app-nav-header></app-nav-header>
     </div>
 </header>

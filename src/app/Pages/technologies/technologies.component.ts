@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
-  styleUrl: './technologies.component.css'
 })
 export class TechnologiesComponent {
 

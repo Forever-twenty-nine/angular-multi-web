@@ -1,9 +1,0 @@
-ul{
-    @apply list-none flex items-center justify-center mt-8;
-}
-a{
-    @apply inline-block;
-    @apply px-3 py-3; 
-    @apply text-sm text-BrandGray-500 ;
-    @apply hover:text-BrandGreen-500 hover:no-underline;
-}

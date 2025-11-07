@@ -1,9 +1,12 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-box',
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './box.component.html',
-  styleUrl: './box.component.css'
 })
 export class BoxComponent {
   @Input() boxClass: string | undefined;
