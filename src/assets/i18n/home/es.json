@@ -1,6 +1,38 @@
 {
   "home": {
-    "title": "Inicio",
-    "subTitle": "Esta es su página de inicio"
+    "hero": {
+      "title": "Transformamos Ideas en Software de Calidad",
+      "subtitle": "Soluciones tecnológicas innovadoras para impulsar tu negocio al siguiente nivel",
+      "ctaPrimary": "Comenzar Proyecto",
+      "ctaSecondary": "Ver Servicios"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "service1": {
+        "title": "Desarrollo Web",
+        "description": "Aplicaciones web modernas y escalables con las últimas tecnologías del mercado"
+      },
+      "service2": {
+        "title": "Aplicaciones Móviles",
+        "description": "Apps nativas y multiplataforma para iOS y Android con experiencias excepcionales"
+      },
+      "service3": {
+        "title": "Soluciones Cloud",
+        "description": "Arquitecturas cloud robustas y seguras para maximizar el rendimiento de tu negocio"
+      }
+    },
+    "whyUs": {
+      "title": "¿Por Qué Elegirnos?",
+      "description": "Somos un equipo apasionado de desarrolladores comprometidos con la excelencia y la innovación tecnológica.",
+      "point1": "Más de 10 años de experiencia en desarrollo de software",
+      "point2": "Equipo especializado en múltiples tecnologías",
+      "point3": "Metodologías ágiles para entregas rápidas y eficientes",
+      "point4": "Soporte continuo y mantenimiento post-lanzamiento"
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar tu Proyecto?",
+      "description": "Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar tus objetivos",
+      "button": "Contactar Ahora"
+    }
   }
 }

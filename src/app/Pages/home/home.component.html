@@ -1,6 +1,86 @@
-<div class="flex justify-center items-center h-screen">
-  <div class="bg-white shadow-md rounded-lg p-6 max-w-md">
-    <h1 class="text-2xl font-bold mb-2">{{ 'home.title' | translate }}</h1>
-    <p class="text-gray-700">{{ 'home.subTitle' | translate }}</p>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-5xl font-bold mb-4">{{ 'home.hero.title' | translate }}</h1>
+    <p class="text-xl mb-8 text-blue-100">{{ 'home.hero.subtitle' | translate }}</p>
+    <div class="flex gap-4 justify-center">
+      <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+        {{ 'home.hero.ctaPrimary' | translate }}
+      </button>
+      <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+        {{ 'home.hero.ctaSecondary' | translate }}
+      </button>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">{{ 'home.services.title' | translate }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+        <div class="text-blue-600 text-4xl mb-4">💻</div>
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service1.title' | translate }}</h3>
+        <p class="text-gray-600">{{ 'home.services.service1.description' | translate }}</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+        <div class="text-blue-600 text-4xl mb-4">📱</div>
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service2.title' | translate }}</h3>
+        <p class="text-gray-600">{{ 'home.services.service2.description' | translate }}</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+        <div class="text-blue-600 text-4xl mb-4">☁️</div>
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service3.title' | translate }}</h3>
+        <p class="text-gray-600">{{ 'home.services.service3.description' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">{{ 'home.whyUs.title' | translate }}</h2>
+        <p class="text-gray-600 mb-6">{{ 'home.whyUs.description' | translate }}</p>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="text-green-500 text-2xl mr-3">✓</span>
+            <span class="text-gray-700">{{ 'home.whyUs.point1' | translate }}</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 text-2xl mr-3">✓</span>
+            <span class="text-gray-700">{{ 'home.whyUs.point2' | translate }}</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 text-2xl mr-3">✓</span>
+            <span class="text-gray-700">{{ 'home.whyUs.point3' | translate }}</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 text-2xl mr-3">✓</span>
+            <span class="text-gray-700">{{ 'home.whyUs.point4' | translate }}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-8 h-96 flex items-center justify-center">
+        <span class="text-6xl">🚀</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-blue-600 text-white py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">{{ 'home.cta.title' | translate }}</h2>
+    <p class="text-xl mb-8 text-blue-100">{{ 'home.cta.description' | translate }}</p>
+    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition text-lg">
+      {{ 'home.cta.button' | translate }}
+    </button>
+  </div>
+</section>

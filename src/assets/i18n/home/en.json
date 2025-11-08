@@ -1,7 +1,38 @@
 {
   "home": {
-    "title": "Home",
-    "subTitle": "Welcome to home page"
-
+    "hero": {
+      "title": "Transform Ideas into Quality Software",
+      "subtitle": "Innovative technology solutions to take your business to the next level",
+      "ctaPrimary": "Start Project",
+      "ctaSecondary": "View Services"
+    },
+    "services": {
+      "title": "Our Services",
+      "service1": {
+        "title": "Web Development",
+        "description": "Modern and scalable web applications with cutting-edge market technologies"
+      },
+      "service2": {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform apps for iOS and Android with exceptional experiences"
+      },
+      "service3": {
+        "title": "Cloud Solutions",
+        "description": "Robust and secure cloud architectures to maximize your business performance"
+      }
+    },
+    "whyUs": {
+      "title": "Why Choose Us?",
+      "description": "We are a passionate team of developers committed to excellence and technological innovation.",
+      "point1": "Over 10 years of experience in software development",
+      "point2": "Team specialized in multiple technologies",
+      "point3": "Agile methodologies for fast and efficient deliveries",
+      "point4": "Continuous support and post-launch maintenance"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Contact us today and discover how we can help you achieve your goals",
+      "button": "Contact Now"
+    }
   }
 }
