@@ -1,44 +1,43 @@
-<footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            
-            <app-nav-footer></app-nav-footer>
-
-            <div class="text-center lg:text-left">      
-                <h3 class="text-white text-base font-semibold uppercase mb-4">España</h3> 
-                <p class="text-sm mb-2">Avda. Jerónimo Roure 43 Puerto de Sagunto - 46520 - Valencia - España</p>
-                <a href="tel:+34622917135" class="block text-sm hover:text-green-500 transition-colors mb-2" title="Teléfono Virtusway España">
-                    +34 622 91 71 35
-                </a>
-                <a href="mailto:comercial@virtusway.com" class="block text-sm hover:text-green-500 transition-colors" title="Correo Virtusway">
-                    comercial&#64;virtusway.com 
-                </a>
-            </div>
-
-            <div class="text-center lg:text-left">   
-                <h3 class="text-white text-base font-semibold uppercase mb-4">Argentina</h3> 
-                <p class="text-sm mb-2">Avda. Peltier 50 Oficina 32 - 5500 - Mendoza - Argentina</p>
-                <a href="tel:+542615957280" class="block text-sm hover:text-green-500 transition-colors mb-2" title="Teléfono Virtusway Argentina">
-                    +54 9 261 595 72 80
-                </a>
-                <a href="mailto:comercial@virtusway.com" class="block text-sm hover:text-green-500 transition-colors" title="Correo Virtusway">
-                    comercial&#64;virtusway.com 
-                </a>
-            </div> 
-
-            <div class="text-center lg:text-left">               
-                <img class="h-8 w-auto mx-auto lg:mx-0 mb-6" src="https://virtuswaycdn.azureedge.net/images/virtusway_microsoft-partner.svg" alt="Virtusway Microsoft Partner" />  
-                <img class="h-44 w-auto mx-auto lg:mx-0" src="https://virtuswaycdn.azureedge.net/images/virtusway_pyme-innovadora-es.png" alt="Virtusway PYME Innovadora" /> 
-            </div>
-
-        </div>
-
-        <div class="relative pt-8">
-            <hr class="border-gray-700 mb-8" />     
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 px-6">        
-                <img class="w-48" src="https://virtuswaycdn.azureedge.net/toolbox/Virtusway_Logo_Horizontal_ColorTextWhite.svg" alt="Virtusway - Hacemos Software" />
-            </div>
-            <app-nav-legal-footer></app-nav-legal-footer>
-        </div>
+<footer class="bg-gray-900 dark:bg-black text-gray-400 py-12 mt-auto border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    
+    <!-- Contact Info -->
+    <div class="flex justify-center mb-12">
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <a href="tel:+34622917135" 
+           class="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors">
+          <span class="material-icons text-base">phone</span>
+          +34 622 91 71 35
+        </a>
+        <a href="mailto:comercial@virtusway.com" 
+           class="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors">
+          <span class="material-icons text-base">email</span>
+          comercial@ftn.com
+        </a>
+      </div>
     </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-800 mb-8"></div>
+
+    <!-- Bottom Footer -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+      
+      <!-- Brand -->
+      <div class="flex items-center gap-2">
+        <span class="material-icons text-blue-400 text-3xl">code</span>
+        <span class="text-white font-semibold text-lg">FTN</span>
+      </div>
+      
+      <!-- Legal Links -->
+      <app-nav-legal-footer></app-nav-legal-footer>
+
+      <!-- Copyright -->
+      <p class="text-gray-500 flex items-center gap-2">
+        <span class="material-icons text-base">copyright</span>
+        {{ currentYear }} FTN
+      </p>
+    </div>
+
+  </div>
 </footer>

@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -8,7 +8,12 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [CommonModule, TranslateModule],
   templateUrl: './home.component.html',
 })
-export class HomeComponent  {
+export class HomeComponent {
+  services = [
+    { icon: 'computer', key: 'service1' },
+    { icon: 'smartphone', key: 'service2' },
+    { icon: 'cloud', key: 'service3' }
+  ];
 
-
+  features = ['point1', 'point2', 'point3', 'point4'];
 }

@@ -1,13 +1,17 @@
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+<section class="bg-linear-to-r from-blue-600 to-blue-800 dark:from-blue-900 dark:to-gray-900 text-white py-20 md:py-32">
   <div class="container mx-auto px-6 text-center">
-    <h1 class="text-5xl font-bold mb-4">{{ 'home.hero.title' | translate }}</h1>
-    <p class="text-xl mb-8 text-blue-100">{{ 'home.hero.subtitle' | translate }}</p>
-    <div class="flex gap-4 justify-center">
-      <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+      {{ 'home.hero.title' | translate }}
+    </h1>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+      {{ 'home.hero.subtitle' | translate }}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button class="bg-white text-blue-600 dark:bg-gray-800 dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-all shadow-lg hover:shadow-xl">
         {{ 'home.hero.ctaPrimary' | translate }}
       </button>
-      <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+      <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 dark:hover:bg-gray-800 dark:hover:border-gray-800 transition-all">
         {{ 'home.hero.ctaSecondary' | translate }}
       </button>
     </div>
@@ -15,71 +19,74 @@
 </section>
 
 <!-- Services Section -->
-<section class="py-16 bg-gray-50">
+<section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">{{ 'home.services.title' | translate }}</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Service 1 -->
-      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-        <div class="text-blue-600 text-4xl mb-4">💻</div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service1.title' | translate }}</h3>
-        <p class="text-gray-600">{{ 'home.services.service1.description' | translate }}</p>
-      </div>
-      <!-- Service 2 -->
-      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-        <div class="text-blue-600 text-4xl mb-4">📱</div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service2.title' | translate }}</h3>
-        <p class="text-gray-600">{{ 'home.services.service2.description' | translate }}</p>
-      </div>
-      <!-- Service 3 -->
-      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
-        <div class="text-blue-600 text-4xl mb-4">☁️</div>
-        <h3 class="text-2xl font-semibold mb-3 text-gray-800">{{ 'home.services.service3.title' | translate }}</h3>
-        <p class="text-gray-600">{{ 'home.services.service3.description' | translate }}</p>
-      </div>
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+      {{ 'home.services.title' | translate }}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (service of services; track service.key) {
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div class="flex justify-center mb-6">
+            <span class="material-icons text-blue-600 dark:text-blue-400" style="font-size: 64px;">
+              {{ service.icon }}
+            </span>
+          </div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white text-center">
+            {{ 'home.services.' + service.key + '.title' | translate }}
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 text-center">
+            {{ 'home.services.' + service.key + '.description' | translate }}
+          </p>
+        </div>
+      }
     </div>
   </div>
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="py-16 bg-white">
+<section class="py-16 md:py-24 bg-white dark:bg-gray-950">
   <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 class="text-4xl font-bold text-gray-800 mb-6">{{ 'home.whyUs.title' | translate }}</h2>
-        <p class="text-gray-600 mb-6">{{ 'home.whyUs.description' | translate }}</p>
-        <ul class="space-y-4">
-          <li class="flex items-start">
-            <span class="text-green-500 text-2xl mr-3">✓</span>
-            <span class="text-gray-700">{{ 'home.whyUs.point1' | translate }}</span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-green-500 text-2xl mr-3">✓</span>
-            <span class="text-gray-700">{{ 'home.whyUs.point2' | translate }}</span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-green-500 text-2xl mr-3">✓</span>
-            <span class="text-gray-700">{{ 'home.whyUs.point3' | translate }}</span>
-          </li>
-          <li class="flex items-start">
-            <span class="text-green-500 text-2xl mr-3">✓</span>
-            <span class="text-gray-700">{{ 'home.whyUs.point4' | translate }}</span>
-          </li>
-        </ul>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          {{ 'home.whyUs.title' | translate }}
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg">
+          {{ 'home.whyUs.description' | translate }}
+        </p>
+        <div class="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl">
+          <ul class="space-y-4">
+            @for (feature of features; track feature) {
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-green-500 dark:text-green-400 shrink-0">check_circle</span>
+                <span class="text-gray-700 dark:text-gray-300">
+                  {{ 'home.whyUs.' + feature | translate }}
+                </span>
+              </li>
+            }
+          </ul>
+        </div>
       </div>
-      <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-8 h-96 flex items-center justify-center">
-        <span class="text-6xl">🚀</span>
+      <div class="flex items-center justify-center">
+        <div class="bg-linear-to-br from-blue-100 to-blue-200 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-16 w-full h-96 flex items-center justify-center">
+          <span class="material-icons text-blue-600 dark:text-blue-400" style="font-size: 120px;">rocket_launch</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="bg-blue-600 text-white py-16">
+<section class="bg-linear-to-r from-blue-600 to-blue-800 dark:from-blue-900 dark:to-gray-900 text-white py-16 md:py-24">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold mb-4">{{ 'home.cta.title' | translate }}</h2>
-    <p class="text-xl mb-8 text-blue-100">{{ 'home.cta.description' | translate }}</p>
-    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition text-lg">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      {{ 'home.cta.title' | translate }}
+    </h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      {{ 'home.cta.description' | translate }}
+    </p>
+    <button class="bg-white text-blue-600 dark:bg-gray-800 dark:text-white px-10 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition-all text-lg shadow-lg hover:shadow-xl">
       {{ 'home.cta.button' | translate }}
     </button>
   </div>
