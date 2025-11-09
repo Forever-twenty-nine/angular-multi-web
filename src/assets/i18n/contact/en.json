@@ -1,6 +1,60 @@
 {
   "contact": {
-    "title": "Contact",
-    "subTitle": "Welcome to Contact page"
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We're here to help. Get in touch with us to discuss your projects and how we can work together."
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": {
+        "title": "Phone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "address": {
+        "title": "Address",
+        "description": "Available for virtual and in-person meetings as needed."
+      },
+      "hours": {
+        "title": "Business Hours",
+        "description": "Monday to Friday: 9:00 - 18:00 CET"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "your@email.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "How can we help you?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your project or inquiry..."
+      },
+      "submit": "Send Message"
+    },
+    "additional": {
+      "title": "How Can We Help You?",
+      "support": {
+        "title": "Technical Support",
+        "description": "Technical assistance for existing projects and system maintenance."
+      },
+      "sales": {
+        "title": "Business Inquiries",
+        "description": "Information about our services and quotes for new projects."
+      },
+      "partnership": {
+        "title": "Strategic Partnerships",
+        "description": "Collaboration opportunities and business partnerships."
+      }
+    }
   }
 }

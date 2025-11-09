@@ -14,20 +14,11 @@ import { routes } from './app/app.routes';
 // Factory function para el loader de traducción
 export function HttpLoaderFactory(http: HttpBackend) {
   return new MultiTranslateHttpLoader(http, [
-    { prefix: './assets/i18n/hero/', suffix: '.json' },
     { prefix: './assets/i18n/home/', suffix: '.json' },
     { prefix: './assets/i18n/about-us/', suffix: '.json' },
     { prefix: './assets/i18n/contact/', suffix: '.json' },
-    { prefix: './assets/i18n/news/', suffix: '.json' },
     { prefix: './assets/i18n/technologies/', suffix: '.json' },
-    { prefix: './assets/i18n/clients/', suffix: '.json' },
-    { prefix: './assets/i18n/button/', suffix: '.json' },
-    { prefix: './assets/i18n/banner-contact/', suffix: '.json' },
-    { prefix: './assets/i18n/box/', suffix: '.json' },
-    { prefix: './assets/i18n/title-section/', suffix: '.json' },
-    { prefix: './assets/i18n/microsoft/', suffix: '.json' },
-    { prefix: './assets/i18n/logistic-software/', suffix: '.json' },
-    { prefix: './assets/i18n/business-intelligence/', suffix: '.json' }
+    { prefix: './assets/i18n/button/', suffix: '.json' }
   ]);
 }
 

@@ -1,6 +1,60 @@
 {
   "contact": {
-    "title": "Contacto",
-    "subTitle": "Bienvenido a la pagina de Contacto"
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Estamos aquí para ayudarte. Ponte en contacto con nosotros para discutir tus proyectos y cómo podemos trabajar juntos."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "phone": {
+        "title": "Teléfono"
+      },
+      "email": {
+        "title": "Correo Electrónico"
+      },
+      "address": {
+        "title": "Dirección",
+        "description": "Disponible para reuniones virtuales y presenciales según sea necesario."
+      },
+      "hours": {
+        "title": "Horario de Atención",
+        "description": "Lunes a Viernes: 9:00 - 18:00 CET"
+      }
+    },
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "name": {
+        "label": "Nombre completo",
+        "placeholder": "Tu nombre completo"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "tu@email.com"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "¿En qué podemos ayudarte?"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntanos sobre tu proyecto o consulta..."
+      },
+      "submit": "Enviar Mensaje"
+    },
+    "additional": {
+      "title": "¿Cómo Podemos Ayudarte?",
+      "support": {
+        "title": "Soporte Técnico",
+        "description": "Asistencia técnica para proyectos existentes y mantenimiento de sistemas."
+      },
+      "sales": {
+        "title": "Consultas Comerciales",
+        "description": "Información sobre nuestros servicios y cotizaciones para nuevos proyectos."
+      },
+      "partnership": {
+        "title": "Alianzas Estratégicas",
+        "description": "Oportunidades de colaboración y asociaciones comerciales."
+      }
+    }
   }
 }

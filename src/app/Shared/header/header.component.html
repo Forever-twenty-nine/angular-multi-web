@@ -1,11 +1,11 @@
-<header class="fixed top-0 w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-50 shadow-sm">
+<header class="fixed top-0 w-full bg-surface border-b border-outline z-50 shadow-sm">
   <nav class="container mx-auto px-6">
     <div class="flex justify-between items-center h-16">
       
       <!-- Brand -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-        <span class="material-icons text-blue-600 dark:text-blue-400 text-3xl">code</span>
-        <span class="text-gray-900 dark:text-white font-bold text-xl">FTN</span>
+        <span class="material-icons text-accent text-3xl">code</span>
+        <span class="text-on-surface font-bold text-xl">FTN</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -16,9 +16,9 @@
       <!-- Mobile Menu Button -->
       <button 
         (click)="toggleMenu()"
-        class="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        class="lg:hidden p-2 rounded-lg hover:bg-surface-secondary transition-colors"
         [attr.aria-label]="menuOpen ? 'Cerrar menú' : 'Abrir menú'">
-        <span class="material-icons text-gray-700 dark:text-gray-300">
+        <span class="material-icons text-on-surface-variant">
           {{ menuOpen ? 'close' : 'menu' }}
         </span>
       </button>
@@ -26,7 +26,7 @@
 
     <!-- Mobile Menu -->
     @if (menuOpen) {
-      <div class="lg:hidden pb-4 border-t border-gray-200 dark:border-gray-800 mt-2 pt-4">
+      <div class="lg:hidden pb-4 border-t border-outline mt-2 pt-4">
         <app-nav-header></app-nav-header>
       </div>
     }

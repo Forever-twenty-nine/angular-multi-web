@@ -1,6 +1,6 @@
 import { availableRoutes } from '../../Data/routes.data';
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, signal, computed } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 import { NavSelectLanguageComponent } from '../nav-select-language/nav-select-language.component';
 import { RouteInfo } from '../../Models/route-info.model';
@@ -14,30 +14,29 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './nav-header.component.html'
 })
 export class NavHeaderComponent {
+  readonly availableRoutes = availableRoutes;
 
-  isDropdownOpen = false;
-  isTopDropdownOpen = false;
-  availableRoutes: RouteInfo[] = availableRoutes;
-  menuOpenState: Map<any, boolean> = new Map();
-  menuOpenStateTop: Map<any, boolean> = new Map();
+  // Signals para el estado de los menús desplegables
+  private menuOpenState = signal(new Map<RouteInfo, boolean>());
 
   constructor(
     private router: Router,
     public languageService: LanguageService
-  ) { }
+  ) {}
 
-  isRouteActive(route: RouteInfo) {
+  isRouteActive(route: RouteInfo): boolean {
     return this.router.isActive(route.routePrefix.en + route.path.en, true);
   }
 
-  toggleDropdown(item: any, open: boolean) {
+  toggleDropdown(item: RouteInfo, open: boolean): void {
     if (item) {
-      this.menuOpenState.set(item, open);
-      this.menuOpenStateTop.set(item, open);
+      const newState = new Map(this.menuOpenState());
+      newState.set(item, open);
+      this.menuOpenState.set(newState);
     }
   }
 
-  calculateDropdownClasses(item: any) {
-    return this.menuOpenState.get(item) ? 'NavDropdown vir-nav-show' : 'NavDropdown';
+  calculateDropdownClasses(item: RouteInfo): string {
+    return this.menuOpenState().get(item) ? 'NavDropdown vir-nav-show' : 'NavDropdown';
   }
 }

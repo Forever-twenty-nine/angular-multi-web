@@ -1,6 +1,254 @@
-<div class="flex justify-center items-center h-screen">
-  <div class="bg-white shadow-md rounded-lg p-6 max-w-md">
-    <h1 class="text-2xl font-bold mb-2">{{ 'technologies.title' | translate }}</h1>
-    <p class="text-gray-700">{{ 'technologies.subTitle' | translate }}</p>
+<!-- Hero Section -->
+<section class="bg-linear-to-r from-primary to-primary-hover text-surface py-20 md:py-32">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+      {{ 'technologies.hero.title' | translate }}
+    </h1>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+      {{ 'technologies.hero.subtitle' | translate }}
+    </p>
   </div>
-</div>
+</section>
+
+<!-- Main Technologies -->
+<section class="py-16 md:py-24 bg-surface">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'technologies.main.title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Angular -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-error text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">code</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.angular.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.angular.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.angular.features.spa' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.angular.features.typescript' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.angular.features.rxjs' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-primary text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">web</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.react.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.react.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.react.features.jsx' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.react.features.hooks' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.react.features.ecosystem' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Node.js -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-success text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">dns</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.nodejs.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.nodejs.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.nodejs.features.async' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.nodejs.features.npm' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.nodejs.features.scalable' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Astro -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-accent text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">rocket_launch</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.astro.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.astro.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.astro.features.islands' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.astro.features.fast' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.astro.features.flexible' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tailwind CSS -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-primary-hover text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">palette</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.tailwind.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.tailwind.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.tailwind.features.utility' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.tailwind.features.responsive' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.tailwind.features.dark' | translate }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Stack Integration -->
+      <div class="bg-surface-secondary p-8 rounded-xl border border-outline hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+        <div class="flex justify-center mb-6">
+          <div class="bg-accent text-surface p-4 rounded-lg">
+            <span class="material-icons text-4xl">hub</span>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-on-surface mb-4 text-center">{{ 'technologies.integration.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-center mb-6">{{ 'technologies.integration.description' | translate }}</p>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.integration.features.modern' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.integration.features.performance' | translate }}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-success text-sm">check_circle</span>
+            <span class="text-on-surface-variant text-sm">{{ 'technologies.integration.features.scalable' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why These Technologies -->
+<section class="py-16 md:py-24 bg-surface-secondary">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'technologies.why.title' | translate }}
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="bg-success text-surface p-3 rounded-lg">
+              <span class="material-icons">trending_up</span>
+            </div>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'technologies.why.modern.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'technologies.why.modern.description' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="bg-accent text-surface p-3 rounded-lg">
+              <span class="material-icons">speed</span>
+            </div>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'technologies.why.performance.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'technologies.why.performance.description' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="bg-primary text-surface p-3 rounded-lg">
+              <span class="material-icons">group</span>
+            </div>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'technologies.why.community.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'technologies.why.community.description' | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface p-8 rounded-xl border border-outline">
+        <h3 class="text-on-surface font-semibold mb-4">{{ 'technologies.why.benefits.title' | translate }}</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3">
+            <span class="material-icons text-success">check_circle</span>
+            <span class="text-on-surface-variant">{{ 'technologies.why.benefits.fast' | translate }}</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-icons text-success">check_circle</span>
+            <span class="text-on-surface-variant">{{ 'technologies.why.benefits.secure' | translate }}</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-icons text-success">check_circle</span>
+            <span class="text-on-surface-variant">{{ 'technologies.why.benefits.maintainable' | translate }}</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-icons text-success">check_circle</span>
+            <span class="text-on-surface-variant">{{ 'technologies.why.benefits.scalable' | translate }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-linear-to-r from-primary to-primary-hover text-surface py-16 md:py-24">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      {{ 'technologies.cta.title' | translate }}
+    </h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      {{ 'technologies.cta.description' | translate }}
+    </p>
+    <button class="bg-surface text-primary px-10 py-4 rounded-lg font-semibold hover:bg-surface-secondary transition-all text-lg shadow-lg hover:shadow-xl">
+      {{ 'technologies.cta.button' | translate }}
+    </button>
+  </div>
+</section>

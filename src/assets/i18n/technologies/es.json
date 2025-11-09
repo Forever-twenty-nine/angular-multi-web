@@ -1,6 +1,92 @@
 {
   "technologies": {
-    "title": "Tecnologias",
-    "subTitle": "Bienvenido a la pagina de Tecnologias."
+    "hero": {
+      "title": "Nuestras Tecnologías",
+      "subtitle": "Utilizamos las tecnologías más modernas y eficientes para crear soluciones web excepcionales que impulsan el crecimiento de nuestros clientes."
+    },
+    "main": {
+      "title": "Tecnologías Principales"
+    },
+    "angular": {
+      "title": "Angular",
+      "description": "Framework completo para aplicaciones web empresariales con arquitectura robusta y escalable.",
+      "features": {
+        "spa": "Aplicaciones de una sola página (SPA)",
+        "typescript": "TypeScript para desarrollo tipado",
+        "rxjs": "Programación reactiva con RxJS"
+      }
+    },
+    "react": {
+      "title": "React",
+      "description": "Biblioteca flexible para interfaces de usuario dinámicas y componentes reutilizables.",
+      "features": {
+        "jsx": "Sintaxis JSX declarativa",
+        "hooks": "Hooks para estado y efectos",
+        "ecosystem": "Ecosistema rico de componentes"
+      }
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Entorno de ejecución JavaScript del lado del servidor para aplicaciones backend escalables.",
+      "features": {
+        "async": "Programación asíncrona no bloqueante",
+        "npm": "Gestión de paquetes con NPM",
+        "scalable": "Arquitecturas altamente escalables"
+      }
+    },
+    "astro": {
+      "title": "Astro",
+      "description": "Framework moderno para sitios web rápidos con arquitectura de islas para optimización automática.",
+      "features": {
+        "islands": "Arquitectura de islas para rendimiento",
+        "fast": "Compilación ultra rápida",
+        "flexible": "Soporte para múltiples frameworks"
+      }
+    },
+    "tailwind": {
+      "title": "Tailwind CSS",
+      "description": "Framework de CSS utilitario para diseño rápido y consistente con enfoque mobile-first.",
+      "features": {
+        "utility": "Clases de utilidad preconstruidas",
+        "responsive": "Diseño responsive integrado",
+        "dark": "Modo oscuro automático"
+      }
+    },
+    "integration": {
+      "title": "Integración Full-Stack",
+      "description": "Combinamos frontend y backend para soluciones completas y coherentes.",
+      "features": {
+        "modern": "Stack tecnológico moderno",
+        "performance": "Rendimiento optimizado",
+        "scalable": "Arquitectura escalable"
+      }
+    },
+    "why": {
+      "title": "¿Por Qué Estas Tecnologías?",
+      "modern": {
+        "title": "Tecnologías Modernas",
+        "description": "Utilizamos las últimas versiones y mejores prácticas para garantizar soluciones futuras."
+      },
+      "performance": {
+        "title": "Rendimiento Optimizado",
+        "description": "Cada tecnología está seleccionada por su capacidad para ofrecer experiencias rápidas y fluidas."
+      },
+      "community": {
+        "title": "Comunidad Activa",
+        "description": "Ecosistemas maduros con soporte continuo y actualizaciones regulares."
+      },
+      "benefits": {
+        "title": "Beneficios Clave",
+        "fast": "Desarrollo rápido y eficiente",
+        "secure": "Código seguro y mantenible",
+        "maintainable": "Fácil mantenimiento y actualización",
+        "scalable": "Preparado para crecimiento futuro"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Innovar?",
+      "description": "Descubre cómo nuestras tecnologías pueden transformar tu proyecto y llevar tu negocio al siguiente nivel.",
+      "button": "Hablemos de tu Proyecto"
+    }
   }
 }

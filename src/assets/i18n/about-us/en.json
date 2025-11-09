@@ -1,12 +1,67 @@
 {
     "about-us": {
-        "philosophyTextHighlightOne": "We believe",
-        "philosophyTextOne": "our work contributes to enhancing people’s lives by providing solutions to their needs and requirements.",
-
-        "philosophyTextHighlightTwo": "We contribute",
-        "philosophyTextTwo": "to reducing stress and burden with tailored software that solves in a simple way processes that could be complex or repetitive.",
-
-        "philosophyTextHighlightThree": "We know",
-        "philosophyTextThree": "our work has a long-term impact on our clients’ business, that is why we commit ourselves to projects success."
+        "hero": {
+            "title": "About Us",
+            "subtitle": "We are a company dedicated to developing innovative technological solutions that transform the way businesses operate and grow."
+        },
+        "story": {
+            "title": "Our Story",
+            "description": "Since our beginnings, we have been committed to providing high-quality technological solutions that drive our clients' growth. Our experience and passion for innovation have made us a reliable partner in the digital world.",
+            "point1": {
+                "title": "Constant Innovation",
+                "description": "We always seek the latest technologies and methodologies to offer cutting-edge solutions."
+            },
+            "point2": {
+                "title": "Client-Focused Approach",
+                "description": "We work closely with our clients to understand their needs and exceed their expectations."
+            },
+            "point3": {
+                "title": "Commitment to Excellence",
+                "description": "We strive to deliver products of the highest quality in every project we undertake."
+            }
+        },
+        "philosophy": {
+            "title": "Our Philosophy",
+            "vision": {
+                "title": "Vision",
+                "description": "To be leaders in developing technological solutions that transform industries and improve lives."
+            },
+            "mission": {
+                "title": "Mission",
+                "description": "To provide innovative technological solutions that drive our clients' growth and efficiency."
+            },
+            "values": {
+                "title": "Values",
+                "description": "Integrity, innovation, collaboration, and commitment to excellence in everything we do."
+            }
+        },
+        "approach": {
+            "title": "Our Approach",
+            "agile": {
+                "title": "Agile Methodology",
+                "description": "We use agile approaches to quickly adapt to changes and deliver continuous value."
+            },
+            "collaboration": {
+                "title": "Collaboration",
+                "description": "We work closely with our clients throughout the entire development process."
+            },
+            "quality": {
+                "title": "Quality and Security",
+                "description": "We implement best practices to ensure the quality and security of our solutions."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "description": "We constantly seek new ways to solve problems and improve processes."
+            }
+        },
+        "future": {
+            "title": "Our Future",
+            "description": "We look to the future with enthusiasm, adopting the latest technological trends such as artificial intelligence, cloud computing, and mobile solutions to continue providing exceptional value to our clients."
+        },
+        "contact": {
+            "title": "Ready to work together?",
+            "description": "If you're looking for innovative technological solutions for your business, we're here to help.",
+            "button": "Contact Us"
+        }
     }
 }

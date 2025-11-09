@@ -1,11 +1,13 @@
-@if(languageText == 'ES'){
-<a (click)="changeLanguage('en')" class="flex items-center gap-1 cursor-pointer text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-   <app-icon-lang></app-icon-lang>
-  <span class="font-medium text-sm">ES</span>
-</a>
-}@else {
-<a (click)="changeLanguage('es')" class="flex items-center gap-1 cursor-pointer text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-   <app-icon-lang></app-icon-lang>
-  <span class="font-medium text-sm">EN</span>
-</a>
-}
+<div class="lang-slider-container">
+  <span class="lang-flag lang-flag-es">
+    <svg width="24" height="16" viewBox="0 0 24 16"><rect width="24" height="16" fill="#c60b1e"/><rect y="4" width="24" height="8" fill="#ffc400"/></svg>
+  </span>
+  <div class="lang-slider" [class.lang-en]="languageText === 'EN'" [class.lang-es]="languageText === 'ES'" (click)="toggleLanguage()">
+    <div class="lang-slider-knob" tabindex="0"
+      [style.left]="languageText === 'ES' ? '2px' : '26px'">
+    </div>
+  </div>
+  <span class="lang-flag lang-flag-en">
+    <svg width="24" height="16" viewBox="0 0 24 16"><rect width="24" height="16" fill="#00247d"/><path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="2"/><path d="M0 0l24 16M24 0L0 16" stroke="#cf142b" stroke-width="1"/><rect x="10" width="4" height="16" fill="#fff"/><rect y="6" width="24" height="4" fill="#fff"/><rect x="11" width="2" height="16" fill="#cf142b"/><rect y="7" width="24" height="2" fill="#cf142b"/></svg>
+  </span>
+</div>

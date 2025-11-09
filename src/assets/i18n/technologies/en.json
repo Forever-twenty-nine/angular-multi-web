@@ -1,6 +1,92 @@
 {
   "technologies": {
-    "title": "Technologies",
-    "subTitle": "Welcome to Technologies page"
+    "hero": {
+      "title": "Our Technologies",
+      "subtitle": "We use the most modern and efficient technologies to create exceptional web solutions that drive our clients' growth."
+    },
+    "main": {
+      "title": "Core Technologies"
+    },
+    "angular": {
+      "title": "Angular",
+      "description": "Complete framework for enterprise web applications with robust and scalable architecture.",
+      "features": {
+        "spa": "Single Page Applications (SPA)",
+        "typescript": "TypeScript for typed development",
+        "rxjs": "Reactive programming with RxJS"
+      }
+    },
+    "react": {
+      "title": "React",
+      "description": "Flexible library for dynamic user interfaces and reusable components.",
+      "features": {
+        "jsx": "Declarative JSX syntax",
+        "hooks": "Hooks for state and effects",
+        "ecosystem": "Rich component ecosystem"
+      }
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "JavaScript runtime environment for scalable server-side applications.",
+      "features": {
+        "async": "Non-blocking asynchronous programming",
+        "npm": "Package management with NPM",
+        "scalable": "Highly scalable architectures"
+      }
+    },
+    "astro": {
+      "title": "Astro",
+      "description": "Modern framework for fast websites with island architecture for automatic optimization.",
+      "features": {
+        "islands": "Island architecture for performance",
+        "fast": "Ultra-fast compilation",
+        "flexible": "Support for multiple frameworks"
+      }
+    },
+    "tailwind": {
+      "title": "Tailwind CSS",
+      "description": "Utility-first CSS framework for fast and consistent design with mobile-first approach.",
+      "features": {
+        "utility": "Pre-built utility classes",
+        "responsive": "Built-in responsive design",
+        "dark": "Automatic dark mode"
+      }
+    },
+    "integration": {
+      "title": "Full-Stack Integration",
+      "description": "We combine frontend and backend for complete and coherent solutions.",
+      "features": {
+        "modern": "Modern technology stack",
+        "performance": "Optimized performance",
+        "scalable": "Scalable architecture"
+      }
+    },
+    "why": {
+      "title": "Why These Technologies?",
+      "modern": {
+        "title": "Modern Technologies",
+        "description": "We use the latest versions and best practices to ensure future-proof solutions."
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "description": "Each technology is selected for its ability to deliver fast and fluid experiences."
+      },
+      "community": {
+        "title": "Active Community",
+        "description": "Mature ecosystems with continuous support and regular updates."
+      },
+      "benefits": {
+        "title": "Key Benefits",
+        "fast": "Fast and efficient development",
+        "secure": "Secure and maintainable code",
+        "maintainable": "Easy maintenance and updates",
+        "scalable": "Ready for future growth"
+      }
+    },
+    "cta": {
+      "title": "Ready to Innovate?",
+      "description": "Discover how our technologies can transform your project and take your business to the next level.",
+      "button": "Let's Talk About Your Project"
+    }
   }
 }

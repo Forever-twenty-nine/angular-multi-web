@@ -1,230 +1,160 @@
-<app-hero
-    heroClass="HeroAboutUs"
-    [heroTag]="tag"
-    [heroTitle]="title"
-    [heroText]= "text"
-    [btnContact]=true
-    [btnDossier]=true
-
->
-</app-hero>
-
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-            [titleSection]="titleOrigin"
-        ></app-title-section>
-
-        <div class="relative flex flex-wrap justify-between gap-8">
-
-            <app-box
-            [ngClass]="'OriginOne'"
-            [boxStrongBig]="boxOriginOneStrongBig"
-            [boxText]="boxOriginOneText"
-            ></app-box>
-
-            <app-box
-            [ngClass]="'OriginTwo'"
-            [boxStrongBig]="boxOriginTwoStrongBig"
-            [boxText]="boxOriginTwoText"
-            ></app-box>
-
-            <app-box
-            [ngClass]="'OriginThree'"
-            [boxStrongBig]="boxOriginThreeStrongBig"
-            [boxText]="boxOriginThreeText"
-            ></app-box>
-
-            <app-box
-            [ngClass]="'OriginFour'"
-            [boxStrongBigHighlight]="boxOriginFourStrongBigHighlight"
-            [boxText]="boxOriginFourText"
-            ></app-box>
-
-        </div>
-
-    </div>
+<!-- Hero Section -->
+<section class="bg-linear-to-r from-primary to-primary-hover text-surface py-20 md:py-32">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+      {{ 'about-us.hero.title' | translate }}
+    </h1>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+      {{ 'about-us.hero.subtitle' | translate }}
+    </p>
+  </div>
 </section>
 
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-            [titleSection]="titlePhilosophy"
-        ></app-title-section>
-
-        <div class="Box">
-            <div class="lg:flex gap-2">
-                <p class="text-xl pb-5 lg:border-r border-solid border-gray-300">
-                    <app-icon-triangle-rotate></app-icon-triangle-rotate>
-                    <strong class=" text-2xl text-bg-green-500">
-                        {{ 'about-us.philosophyTextHighlightOne' | translate }}
-                    </strong>
-                    {{ 'about-us.philosophyTextOne' | translate }}
-                </p>
-                <p class="text-xl pb-5 lg:pl-6">
-                    <app-icon-triangle-rotate></app-icon-triangle-rotate>
-                    <strong class="text-2xl text-bg-green-500">
-                        {{ 'about-us.philosophyTextHighlightTwo' | translate }}
-                    </strong>
-                    {{ 'about-us.philosophyTextTwo' | translate }}
-                </p>
+<!-- Our Story Section -->
+<section class="py-16 md:py-24 bg-surface">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'about-us.story.title' | translate }}
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-on-surface-variant text-lg mb-6">
+          {{ 'about-us.story.description' | translate }}
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <span class="material-icons text-accent shrink-0 mt-1">lightbulb</span>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'about-us.story.point1.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'about-us.story.point1.description' | translate }}</p>
             </div>
-            <p class="text-xl lg:pt-5 lg:mt-5 lg:border-t border-solid border-gray-300">
-                <app-icon-triangle-rotate></app-icon-triangle-rotate>
-                <strong class="text-2xl text-bg-green-500">
-                    {{ 'about-us.philosophyTextHighlightThree' | translate }}
-                </strong>
-                {{ 'about-us.philosophyTextThree' | translate }}
-            </p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-icons text-accent shrink-0 mt-1">groups</span>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'about-us.story.point2.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'about-us.story.point2.description' | translate }}</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-icons text-accent shrink-0 mt-1">rocket_launch</span>
+            <div>
+              <h3 class="text-on-surface font-semibold mb-2">{{ 'about-us.story.point3.title' | translate }}</h3>
+              <p class="text-on-surface-variant">{{ 'about-us.story.point3.description' | translate }}</p>
+            </div>
+          </div>
         </div>
-
-    </div>
-</section>
-
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-        [titleSection]="titleValues"
-        ></app-title-section>
-
-        <div class="flex flex-wrap justify-between gap-8">
-            <app-box
-                [ngClass]="'ValuesOne'"
-                boxImg="../../../assets/images/icon-integrity.png"
-                [boxImgAlt]="boxValueOneImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxValueOneTitle"
-                [boxText]="boxValueOneText"
-                [boxText2]="boxValueOneText2"
-            ></app-box>
-
-            <app-box
-                [ngClass]="'ValuesTwo'"
-                boxImg="../../../assets/images/icon-positive.png"
-                [boxImgAlt]="boxValueTwoImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxValueTwoTitle"
-                [boxText]="boxValueTwoText"
-                [boxText2]="boxValueTwoText2"
-            ></app-box>
-
-            <app-box
-                [ngClass]="'ValuesThree'"
-                boxImg="../../../assets/images/icon-talent.png"
-                [boxImgAlt]="boxValueThreeImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxValueThreeTitle"
-                [boxText]="boxValueThreeText"
-            ></app-box>
-
-            <app-box
-                [ngClass]="'ValuesFour'"
-                boxImg="../../../assets/images/icon-people.png"
-                [boxImgAlt]="boxValueFourImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxValueFourTitle"
-                [boxText]="boxValueFourText"
-            ></app-box>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="bg-linear-to-br from-surface-secondary to-surface-tertiary rounded-2xl p-16 w-full h-96 flex items-center justify-center border-2 border-outline">
+          <span class="material-icons text-accent" style="font-size: 120px;">business</span>
         </div>
-
+      </div>
     </div>
+  </div>
 </section>
 
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-            [titleSection]="titleTrajectory"
-        ></app-title-section>
-
-        <div class="BoxTextImg flex flex-wrap items-stretch justify-between gap-8">
-            <app-box
-                [ngClass]="'TrajectoryOne'"
-                [boxText]="boxTrajectoryOneText"
-                [boxText2]="boxTrajectoryOneText2"
-            ></app-box>
-            <app-box
-                [ngClass]="'TrajectoryTwo'"
-                boxClass="p-0"
-            ></app-box>
-            <app-box
-                [ngClass]="'TrajectoryThree'"
-                boxClass="p-0"
-            ></app-box>
+<!-- Our Philosophy Section -->
+<section class="py-16 md:py-24 bg-surface-secondary">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'about-us.philosophy.title' | translate }}
+    </h2>
+    <div class="bg-surface p-8 rounded-xl border border-outline">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="flex justify-center mb-4">
+            <span class="material-icons text-accent" style="font-size: 48px;">visibility</span>
+          </div>
+          <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.philosophy.vision.title' | translate }}</h3>
+          <p class="text-on-surface-variant">{{ 'about-us.philosophy.vision.description' | translate }}</p>
         </div>
-
-    </div>
-</section>
-
-
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-            [titleSection]="titleMethodology"
-        ></app-title-section>
-
-        <div class="flex flex-wrap justify-between gap-8">
-            <app-box
-                [ngClass]="'MethodologyOne'"
-                boxImg="../../../assets/images/icon-agility.jpg"
-                [boxImgAlt]="boxMethodologyOneImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxMethodologyOneTitle"
-                [boxText]="boxMethodologyOneText"
-                [boxText2]="boxMethodologyOneText2"
-            ></app-box>
-
-            <app-box
-                [ngClass]="'MethodologyTwo'"
-                boxImg="../../../assets/images/icon-engagement.jpg"
-                [boxImgAlt]="boxMethodologyTwoImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxMethodologyTwoTitle"
-                [boxText]="boxMethodologyTwoText"
-                [boxText2]="boxMethodologyTwoText2"
-            ></app-box>
-
-            <app-box
-                [ngClass]="'MethodologyThree'"
-                boxImg="../../../assets/images/icon-transparency.jpg"
-                [boxImgAlt]="boxMethodologyThreeImgAlt"
-                boxImgClass="h-26 mb-4"
-                [boxTitle]="boxMethodologyThreeTitle"
-                [boxText]="boxMethodologyThreeText"
-            ></app-box>
-
+        <div class="text-center">
+          <div class="flex justify-center mb-4">
+            <span class="material-icons text-accent" style="font-size: 48px;">handshake</span>
+          </div>
+          <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.philosophy.mission.title' | translate }}</h3>
+          <p class="text-on-surface-variant">{{ 'about-us.philosophy.mission.description' | translate }}</p>
         </div>
-
+        <div class="text-center">
+          <div class="flex justify-center mb-4">
+            <span class="material-icons text-accent" style="font-size: 48px;">diamond</span>
+          </div>
+          <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.philosophy.values.title' | translate }}</h3>
+          <p class="text-on-surface-variant">{{ 'about-us.philosophy.values.description' | translate }}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-
-
-<section>
-    <div class="Container">
-
-        <app-title-section
-            [titleSection]="titleFuture"
-        ></app-title-section>
-
-        <app-box
-            [boxStrongBigHighlight]="boxFutureOneStrongBigHighlight"
-            [boxText]="boxFutureOneText"
-            boxStrongBigHighlight=""
-            boxText=", aprovechando el poder de la inteligencia artificial para optimizar nuestros procesos internos y mejorar la eficiencia. Al mismo tiempo, nos dedicamos a crear soluciones innovadoras para nuestros clientes, permitiéndoles aprovechar esta tecnología transformadora y prosperar en un panorama digital en constante evolución."
-        ></app-box>
-
+<!-- Our Approach Section -->
+<section class="py-16 md:py-24 bg-surface">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'about-us.approach.title' | translate }}
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-surface-secondary p-6 rounded-xl border border-outline text-center">
+        <div class="flex justify-center mb-4">
+          <span class="material-icons text-accent" style="font-size: 40px;">speed</span>
+        </div>
+        <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.approach.agile.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-sm">{{ 'about-us.approach.agile.description' | translate }}</p>
+      </div>
+      <div class="bg-surface-secondary p-6 rounded-xl border border-outline text-center">
+        <div class="flex justify-center mb-4">
+          <span class="material-icons text-accent" style="font-size: 40px;">people</span>
+        </div>
+        <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.approach.collaboration.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-sm">{{ 'about-us.approach.collaboration.description' | translate }}</p>
+      </div>
+      <div class="bg-surface-secondary p-6 rounded-xl border border-outline text-center">
+        <div class="flex justify-center mb-4">
+          <span class="material-icons text-accent" style="font-size: 40px;">security</span>
+        </div>
+        <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.approach.quality.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-sm">{{ 'about-us.approach.quality.description' | translate }}</p>
+      </div>
+      <div class="bg-surface-secondary p-6 rounded-xl border border-outline text-center">
+        <div class="flex justify-center mb-4">
+          <span class="material-icons text-accent" style="font-size: 40px;">trending_up</span>
+        </div>
+        <h3 class="text-on-surface font-semibold mb-3">{{ 'about-us.approach.innovation.title' | translate }}</h3>
+        <p class="text-on-surface-variant text-sm">{{ 'about-us.approach.innovation.description' | translate }}</p>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- Our Future Section -->
+<section class="py-16 md:py-24 bg-surface-secondary">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-on-surface mb-12">
+      {{ 'about-us.future.title' | translate }}
+    </h2>
+    <div class="bg-surface p-8 rounded-xl border border-outline">
+      <div class="flex items-center justify-center mb-6">
+        <span class="material-icons text-accent" style="font-size: 64px;">auto_awesome</span>
+      </div>
+      <p class="text-on-surface-variant text-lg text-center max-w-4xl mx-auto">
+        {{ 'about-us.future.description' | translate }}
+      </p>
+    </div>
+  </div>
+</section>
 
-<app-banner-contact></app-banner-contact>
+<!-- Contact CTA -->
+<section class="bg-linear-to-r from-primary to-primary-hover text-surface py-16 md:py-24">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      {{ 'about-us.contact.title' | translate }}
+    </h2>
+    <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      {{ 'about-us.contact.description' | translate }}
+    </p>
+    <button class="bg-surface text-primary px-10 py-4 rounded-lg font-semibold hover:bg-surface-secondary transition-all text-lg shadow-lg hover:shadow-xl">
+      {{ 'about-us.contact.button' | translate }}
+    </button>
+  </div>
+</section>
